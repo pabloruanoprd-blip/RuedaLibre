@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 140" width="480" height="140" role="img" aria-label="Rueda Libre">
+<circle cx="70" cy="70" r="52" fill="none" stroke="#1a7f5a" stroke-width="14"/>
+<circle cx="70" cy="70" r="9" fill="#1a7f5a"/>
+<path d="M70 70 L70 28 M70 70 L106 91 M70 70 L34 91" stroke="#1a7f5a" stroke-width="6" stroke-linecap="round"/>
+<path d="M92 24 q22 -8 34 6 q-18 10 -34 -6z" fill="#f59e0b"/>
+<text x="140" y="68" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#fff">Rueda Libre</text>
+<text x="142" y="104" font-family="Inter, Arial, sans-serif" font-size="20" fill="#d9f2e6">Taller y bicis eléctricas · Getafe</text></svg>
