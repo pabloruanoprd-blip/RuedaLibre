@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<!--
-  Página: Inicio · Rueda Libre
-  Equipo: NOMBRE DEL EQUIPO
-  Última revisión: FECHA
--->
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rueda Libre</title>
-  <!-- TODO (sesión 8): enlaza aquí tu hoja de estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio · Rueda Libre</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header>
-    <!-- TODO: nombre o logo del negocio -->
-  
-    <nav aria-label="Principal">
-    <img src="img/logo.png" style="height: 150px; width:500px ;">
-     <strong> <a href="index.html">Inicio</a></strong>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
-
-  
-  <main>
-    <!-- TODO: un único h1 con el título de la página -->
-     
-    <h1>Inicio</h1>
-    <!-- TODO (sesión 3): sustituye por el texto real de la carpeta «textos» -->
-    <p>Texto de la página.</p>
-
-  </main>
-
-  <footer>
-    <!-- TODO: dirección, teléfono (tel:) y correo (mailto:) -->
-    <p style="font-size: 20px;">
-    <img src="img/email.png" style="height:25px ; width:25px ;"> 
-    <a href="mailto:carmen@ruedalibre.example">Email:carmen@ruedalibre.example </a>  
-    <img src="img/phone-call.png" style="height:25px ; width:25px ;"> Teléfono: 910 000 000 
-  <img src="img/location.png" style="height: 25px; width: 25px;"> Calle de la Rueda, 12.  28901 Getafe
-  </p>
-    <p style="font-size: 20px;">&copy; Rueda Libre</p> 
     
-  </footer>
+    <header class="cabecera">
+
+        <img src="img/banner.gif" alt="Logo de Rueda Libre" class="logo">
+
+       
+<nav aria-label="Menú principal">
+    <ul>
+        <li>
+            <a href="index.html" aria-current="page">Inicio</a>
+        </li>
+
+        <li>
+            <a href="servicios.html">Servicios ▼</a>
+
+            <ul class="submenu">
+                <li><a href="alquiler.html">Alquiler de bicicletas</a></li>
+                <li><a href="taller.html">Taller de reparación</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+        <li>
+            <a href="tarifas.html">Tarifas</a>
+        </li>
+    </ul>
+</nav>
+
+
+        <img src="img/contador.gif"
+             alt="Contador de visitas"
+             class="contador"> 
+
+         <p>
+            <img src="img/construccion.gif" alt="Página en construcción" class="imagen-construccion">
+        </p> 
+
+    </header>
+
+    <main id="contenido-principal">
+
+        <section class="bienvenida">
+
+            <h1>Muévete libre por Getafe</h1>
+
+            <h2>Alquila una bici eléctrica por horas o por días, o deja tu bici en manos de nuestro taller.</h2>
+
+            <p>
+                Rueda Libre nació en 2009 como un pequeño taller de barrio.
+                Hoy, además de reparar bicicletas, alquilamos bicis eléctricas
+                para que puedas moverte por Getafe y sus alrededores
+                sin esfuerzo y sin atascos.
+            </p>
+
+            <img src="img/foto-bici-grande.png" width="150" height="150" alt="Bici eléctrica de Rueda Libre" class="imagen-principal">
+
+            <a href="servicios.html" class="boton">Reserva tu bici</a>
+
+        
+                <a href="tarifas.html" class="boton">Mira las tarifas</a>
+            
+
+        </section>
+     
+    </main>
+
+    <footer class="pie-pagina">
+
+        <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
+
+        <blockquote>
+            "Probé una bici eléctrica en Rueda Libre antes de comprar
+            la mía y acerté de lleno." — Luis, cliente desde 2022
+        </blockquote>
+
+        <address>
+            Teléfono: <a href="tel:+34000000000">000 000 000</a><br>
+            Correo: <a href="mailto:info@ruedalibre.es">info@ruedalibre.es</a>
+        </address>
+
+
+
+    </footer>
 </body>
 </html>
