@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <header class="cabecera">
+        <img src="img/logo.png" alt="Logo de Rueda Libre" class="logo" style="height: 150px; width:500px ;">
+<nav aria-label="Menú principal">
+    <ul>
+        <li>
+            <a href="index.html" aria-current="page">Inicio</a>
+        </li>
+
+        <li>
+            <a href="servicios.html">Servicios</a>
+
+        </li>
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+        <li>
+            <a href="tarifas.html">Tarifas</a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<main>
+    <h1>Formulario de reserva</h1>
+  <form action="procesar_reserva.php" method="POST">
+    <fieldset>
+      <legend>Tus datos</legend>
+      <p><label for="nombre">Nombre y apellidos:</label>
+        <input type="text"id="nombre"name="nombre"required ></p>
+        <p><label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required></p>
+      <p><label for="telefono">Teléfono:</label>
+         <input type="tel"id="telefono" name="telefono" pattern="[6789][0-9]{8}" maxlength="9" title="Introduce 9 dígitos y empieza por 6, 7, 8 o 9" required>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Tu reserva</legend>
+      <p>
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <option value="alquiler">Alquiler</option>
+          <option value="taller">Taller</option>
+          <option value="revision">Revisión de batería y motor</option>
+          <option value="ruta">Ruta guiada</option>
+        </select>
+      </p>
+      <fieldset id="grupo-bici" hidden disabled>
+        <legend>Modelo de bici</legend>
+        <p>
+          <input type="radio"d="urbana"name="modelo_bici" value="Urbana"
+          >
+          <label for="urbana">Urbana</label>
+        </p>
+        <p>
+          <input type="radio" id="montana" name="modelo_bici" value="Montaña"
+          >
+          <label for="montana">Montaña</label>
+        </p>
+        <p>
+          <input type="radio" id="plegable" name="modelo_bici" value="Plegable">
+          <label for="plegable">Plegable</label>
+        </p>
+      </fieldset>
+      <p>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </p>
+      <p>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" min="09:30" max="19:30" required>
+      </p>
+      <p>
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" max="8" step="1">
+      </p>
+      <p>
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" maxlength="300" rows="5" cols="40"></textarea>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Consentimiento</legend>
+      <p>
+        <input type="checkbox" id="privacidad" name="privacidad" value="aceptada"required>
+        <label for="privacidad"> He leído y acepto el aviso de privacidad. </label>
+      </p>
+    </fieldset>
+    <p><button type="submit" accesskey="r">Reservar</button></p>
+  </form>
+</main>
+ <footer class="pie-pagina">
+        <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
+
+        <blockquote>
+            "Probé una bici eléctrica en Rueda Libre antes de comprar
+            la mía y acerté de lleno."
+            — Luis, cliente desde 2022
+        </blockquote>
+        <address>
+            Teléfono: <a href="tel:+34000000000">000 000 000</a><br>
+            Correo: <a href="mailto:info@ruedalibre.es">info@ruedalibre.es</a>
+        </address>
+
+    </footer>
+    
+</body>
+</html>
